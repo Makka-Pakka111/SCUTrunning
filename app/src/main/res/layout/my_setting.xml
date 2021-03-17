@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/setLayout"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/title_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/setting_title"
+            android:textColor="#FF5E07"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/smalllogo"
+            android:layout_toLeftOf="@id/title_text_tv"
+            android:src="@drawable/write" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/userNameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   ">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/userNamejpg"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/username"/>
+        <Button
+            android:id="@+id/setName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    修改用户名"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/historyIcon"
+            android:textSize="18sp"
+            android:background="@null"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/userNameLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   ">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/passjpg"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/password"/>
+
+        <Button
+            android:id="@+id/setPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/setting"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="    修改密码"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/default_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/default_touxiang"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:text="昵称："
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/default_image"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/username_value"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:text=""
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@id/username"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   ">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/historyIcon"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/nnewhis"/>
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    历史记录"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@id/historyIcon"
+            android:textSize="18sp"
+            android:background="@null"/>
+    </LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   ">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/newsetting"/>
+
+    <Button
+        android:id="@+id/setInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    设置"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/setting"
+        android:textSize="18sp"
+        android:background="@null"/>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
